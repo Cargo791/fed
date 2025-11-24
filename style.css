@@ -1,3 +1,101 @@
+@media (max-width: 768px) {
+  /* Make container stack and center everything */
+  
+  .lupe {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* horizontal center */
+    justify-content: center !important; /* vertical centering if needed */
+    gap: 30px !important; /* spacing between cards */
+    width: 100% !important; /* full width */
+    padding-left: 0 !important; /* remove extra padding */
+    padding-right: 0 !important; /* remove extra padding */
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Each card centered and full width */
+  .opueh {
+    width: 90% !important; /* fits within screen */
+    max-width: 500px !important; /* optional limit */
+    margin: 0 auto !important; /* center horizontally */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: start !important;
+    text-align: start !important;
+  }
+
+  /* Images responsive and centered */
+  .opueh img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Headings and text */
+  .opueh h5, .opueh p {
+    text-align:  start !important;
+    margin: 10px 0 !important;
+  }
+
+  /* Buttons / links inside .line */
+  .opueh .line {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: start !important;
+  }
+
+  .opueh .line a h5 {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  /* Make image full-width with no padding/margin */
+  .why .car img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove any padding from the parent container on mobile */
+  .why {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Remove any horizontal margin on the image wrapper */
+  .why .car {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .why {
+    display: block;         /* stack content */
+    margin-left: 20px !important;   /* remove horizontal margin */
+    margin-right: 20px !important;
+    padding-left: 0 !important;  /* remove padding */
+    padding-right: 0 !important;
+  }
+
+  .why .car {
+    margin: 0 !important;   /* remove any wrapper margin */
+  }
+
+  .why .car img {
+    width: 100% !important; /* full width */
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    object-fit: cover;      /* optional, keeps proportions */
+  }
+    .why .fed {
+    padding: 20px !important;      /* adds space around text */
+  }
+}
+
 /* ===== MOBILE – EVERYTHING CENTERED ===== */
 @media (max-width: 768px) {
 
@@ -220,7 +318,7 @@ body {
     margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
-    max-width: 400px;
+    max-width: 500px;
   }
 
   .opueh img {
@@ -254,7 +352,7 @@ body {
   }
   
   .fxgg-img {
-   height: 170px;        /* Usually used if width is fixed; here overridden by inline */
+   height: 190px;        /* Usually used if width is fixed; here overridden by inline */
 }
   .dropdown-content a {
     width: 100%;
@@ -760,6 +858,7 @@ body, html {
     }
     .hope {
       display: block;
+    
     }
     .why {
       display: block;
